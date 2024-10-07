@@ -33,8 +33,10 @@ Unauthorized use of these actions can lead to:
 | RDS | RDS Cluster Master User Secret | rds:ModifyDBCluster| Grants permission to modify a setting for an Amazon Aurora DB cluster or Amazon DocumentDB cluster | Write |
 | RDS | RDS Cluster Performance Insights | rds:ModifyDBCluster | Grants permission to modify a setting for an Amazon Aurora DB cluster or Amazon DocumentDB cluster |Write |
 | RDS | RDS Cluster Storage Encryption | rds:ModifyDBCluster | Grants permission to modify a setting for an Amazon Aurora DB cluster or Amazon DocumentDB cluster | Write |
+| Redshift Serverless | Namespace | redshift-serverless:UpdateNamespace | Grants permission to update a namespace with the specified configuration settings | Write |
 
-## AWS Resources that cannot have encryption updated directly
+
+## AWS Resources that cannot have encryption updated directly (only on creation)
 
 | AWS Service | AWS Resource |
 | ------------- | ----------- |
@@ -42,6 +44,12 @@ Unauthorized use of these actions can lead to:
 | S3 (Simple Storage Service) | S3 Bucket |
 | RDS | RDS Database Instance |
 | EFS | EFS File System | 
+| ElastiCache | Global Datastore (Cluster) |
+| Aurora | Aurora Database Instance |
+| ElastiCache | Redis Cache |
+| ElastiCache | Memcached Cache | 
+| ElastiCache | Serverless Cache | 
+
 
 * S3 is included in AWS Resources that cannot have encryption updated directly as changing bucket level encryption does not change the encryption settings for existing objects in the S3 bucket.
 

@@ -47,6 +47,7 @@ Unauthorized use of these actions can lead to:
 
 ## Encryption Settings 
 | AWS Service | IAM Action | Action Description | Access Level (AWS) |
+| ------------- | ----------- | ----------- | ----------- | 
 | S3 (Simple Storage Service) | s3:PutEncryptionConfiguration | Grants permission to set the encryption configuration for an Amazon S3 bucket | Write |
 
 ## Reference Policies

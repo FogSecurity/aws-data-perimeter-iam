@@ -20,7 +20,7 @@ Unauthorized use of these actions can lead to:
 ### AWS Service Encryption IAM Actions Table (Update Resources)
 
 | AWS Service | AWS Resource| IAM Action | Action Description | Access Level (AWS) | 
-| ------------- | ----------- | ------------- | ------------------ |
+| ------------- | ----------- | ------------- | ------------------ | ------------------ |
 | DynamoDB | DynamoDB Table | dynamodb:UpdateTable | Grants permission to modify the provisioned throughput settings, global secondary indexes, or DynamoDB Streams settings for a given table | Write |
 | SQS | Queue | sqs:SetQueueAttributes | Grants permission to set the value of one or more queue attributes | Write |
 | Secrets Manager | Secret | secretsmanager:updateSecret | Grants permission to update a secret with new metadata or with a new version of the encrypted data | Write |

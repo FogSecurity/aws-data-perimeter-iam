@@ -44,7 +44,7 @@ Unauthorized use of these actions can lead to:
 
 Interesting Notes:
 * Timestream Update Database only updates encryption settings: https://docs.aws.amazon.com/timestream/latest/developerguide/API_UpdateDatabase.html
-
+* PII Entities Detection Job in Comprehend does not have the ability to specify Volume KMS Key ID.
 
 ## AWS Resources that cannot have encryption updated directly (only on creation)
 
@@ -69,9 +69,13 @@ Interesting Notes:
 | Prometheus | Workspace | 
 | Managed Streaming for Apache Kafka | MSK Cluster |
 | Sagemaker | Sagemaker Notebook Instance |
-
-
-
+| Comprehend | Document Classification Job Volume |
+| Comprehend | Entities Detection Job Volume |
+| Comprehend | Topics Detection Job Volume |
+| Comprehend | Targeted Sentiment Detection Job Volume |
+| Comprehend | Sentiment Detection Job Volume |
+| Comprehend | Key Phrases Detection Job Volume |
+| Comprehend | Dominant Language Detection Job Volume |
 
 
 ## Unencrypted Resources

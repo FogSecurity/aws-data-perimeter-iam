@@ -41,6 +41,9 @@ Unauthorized use of these actions can lead to:
 | Simple Notification Service (SNS) | SNS Topic | sns:SetTopicAttributes | Grants permission to allow a topic owner to set an attribute of the topic to a new value | Permissions Management | No |
 | CloudWatch | CloudWatch Log Group | logs:AssociateKMSKey | Grants permission to associate the specified AWS Key Management Service (AWS KMS) customer master key (CMK) with the specified log group | Write | Yes |
 | Kinesis | Firehose Stream | firehose:StartDeliveryStreamEncryption | Grants permission to enable server-side encryption (SSE) for the delivery stream | Write | Yes |
+| X-Ray | Trace | xray:PutEncryptionConfig | Grants permission to update the encryption configuration for X-Ray data | Permissions Management | Yes |
+| OpenSearch | OpenSearch Domain | es:UpdateDomainConfig | Grants permission to modify the configuration of an OpenSearch Service domain, such as the instance type or number of instances | Write | No |
+
 
 Interesting Notes:
 * Timestream Update Database only updates encryption settings: https://docs.aws.amazon.com/timestream/latest/developerguide/API_UpdateDatabase.html
@@ -88,9 +91,11 @@ Interesting Notes:
 * S3 is included in AWS Resources that cannot have encryption updated directly as changing bucket level encryption does not change the encryption settings for existing objects in the S3 bucket.
 
 ## Encryption Settings 
-| AWS Service | IAM Action | Action Description | Access Level (AWS) |
-| ------------- | ----------- | ----------- | ----------- | 
-| S3 (Simple Storage Service) | s3:PutEncryptionConfiguration | Grants permission to set the encryption configuration for an Amazon S3 bucket | Write |
+| AWS Service | AWS Resource | IAM Action | Action Description | Access Level (AWS) |
+| ------------- | ----------- | ----------- | ----------- | ----------- | 
+| S3 (Simple Storage Service) | S3 Bucket | s3:PutEncryptionConfiguration | Grants permission to set the encryption configuration for an Amazon S3 bucket | Write |
+| OpenSearch Serverless | OpenSearch Collection | aoss:CreateSecurityPolicy | Grants permission to create a network or encryption policy | Write |
+| OpenSearch Serverless | OpenSearch Collection | aoss:UpdateSecurityPolicy | Grants permission to update a security policy | Write |
 
 ## Reference Policies
 

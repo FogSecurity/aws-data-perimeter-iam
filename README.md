@@ -85,7 +85,10 @@ Interesting Notes:
 | Elastic Container Registry (ECR) | ECR Repository | 
 | Database Migration Service (DMS) | Replication Instance | 
 | Kinesis Video | Kinesis Video Stream |
-
+| FSx | File System |
+| FSx | File Cache |
+| AppFlow | Flow |
+| AppFlow | Connector Profile | 
 
 
 

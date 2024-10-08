@@ -44,8 +44,7 @@ Unauthorized use of these actions can lead to:
 | X-Ray | Trace | xray:PutEncryptionConfig | Grants permission to update the encryption configuration for X-Ray data | Permissions Management | Yes |
 | OpenSearch | OpenSearch Domain | es:UpdateDomainConfig | Grants permission to modify the configuration of an OpenSearch Service domain, such as the instance type or number of instances | Write | No |
 | CodeCommit | CodeCommit Repository | codecommit:UpdateRepositoryEncryptionKey | Grants permission to change the AWS KMS encryption key used to encrypt and decrypt an AWS CodeCommit repository | Write | Yes |
-
-
+| EMR Serverless | EMR Serverless Application Managed Logs |  emr-serverless:UpdateApplication | Grants permission to Update an application | Write | No |
 
 Interesting Notes:
 * Timestream Update Database only updates encryption settings: https://docs.aws.amazon.com/timestream/latest/developerguide/API_UpdateDatabase.html
@@ -93,10 +92,9 @@ Interesting Notes:
 | AppFlow | Connector Profile | 
 | DynamoDB Accelerator (DAX) | DAX Cluster |
 | CodeArtifact | CodeArtifact Domain |
-
-
-
-
+| Healthlake | Healthlake Datastore |
+| Managed WorkFlows for Apache Airflow (MWAA) | MWAA Environment |
+| Amazon Q | Amazon Q Business Application |
 
 ## Unencrypted Resources
 

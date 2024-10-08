@@ -82,6 +82,10 @@ Interesting Notes:
 | Amazon MQ | ActiveMQ Broker |
 | Amazon MQ | RabbitMQ Broker |
 | Kendra | Kendra Index |
+| Elastic Container Registry (ECR) | ECR Repository | 
+| Database Migration Service (DMS) | Replication Instance | 
+| Kinesis Video | Kinesis Video Stream |
+
 
 
 

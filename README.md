@@ -43,6 +43,8 @@ Unauthorized use of these actions can lead to:
 | Kinesis | Firehose Stream | firehose:StartDeliveryStreamEncryption | Grants permission to enable server-side encryption (SSE) for the delivery stream | Write | Yes |
 | X-Ray | Trace | xray:PutEncryptionConfig | Grants permission to update the encryption configuration for X-Ray data | Permissions Management | Yes |
 | OpenSearch | OpenSearch Domain | es:UpdateDomainConfig | Grants permission to modify the configuration of an OpenSearch Service domain, such as the instance type or number of instances | Write | No |
+| CodeCommit | CodeCommit Repository | codecommit:UpdateRepositoryEncryptionKey | Grants permission to change the AWS KMS encryption key used to encrypt and decrypt an AWS CodeCommit repository | Write | Yes |
+
 
 
 Interesting Notes:
@@ -89,6 +91,10 @@ Interesting Notes:
 | FSx | File Cache |
 | AppFlow | Flow |
 | AppFlow | Connector Profile | 
+| DynamoDB Accelerator (DAX) | DAX Cluster |
+| CodeArtifact | CodeArtifact Domain |
+
+
 
 
 

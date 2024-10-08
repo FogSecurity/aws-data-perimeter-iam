@@ -79,6 +79,10 @@ Interesting Notes:
 | Comprehend | Sentiment Detection Job Volume |
 | Comprehend | Key Phrases Detection Job Volume |
 | Comprehend | Dominant Language Detection Job Volume |
+| Amazon MQ | ActiveMQ Broker |
+| Amazon MQ | RabbitMQ Broker |
+| Kendra | Kendra Index |
+
 
 
 ## Unencrypted Resources

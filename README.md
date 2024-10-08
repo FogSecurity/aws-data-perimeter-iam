@@ -24,7 +24,8 @@ Unauthorized use of these actions can lead to:
 | DynamoDB | DynamoDB Table | dynamodb:UpdateTable | Grants permission to modify the provisioned throughput settings, global secondary indexes, or DynamoDB Streams settings for a given table | Write | No |
 | SQS | Queue | sqs:SetQueueAttributes | Grants permission to set the value of one or more queue attributes | Write | No |
 | Secrets Manager | Secret | secretsmanager:updateSecret | Grants permission to update a secret with new metadata or with a new version of the encrypted data | Write | No |
-| Glue | Glue Data Catalog | glue:PutDataCatalogEncryptionSettings | Grants permission to update catalog encryption settings | Write | Yes | 
+| Glue | Glue Data Catalog Metadata | glue:PutDataCatalogEncryptionSettings | Grants permission to update catalog encryption settings | Write | Yes | 
+| Glue | Glue Data Catalog Connection Passwords | glue:PutDataCatalogEncryptionSettings | Grants permission to update catalog encryption settings | Write | Yes | 
 | QLDB | Ledger | qldb:updateLedger | 	Grants permission to update properties on a ledger | Write | No |
 | Lambda | Lambda Environment Variables | lambda:UpdateFunctionConfiguration | Grants permission to modify the version-specific settings of an AWS Lambda function | Write | No |
 | Redshift | Redshift Cluster | redshift:ModifyCluster | Grants permission to modify the settings of a cluster | Write | No |
@@ -38,7 +39,9 @@ Unauthorized use of these actions can lead to:
 | Timestream | Timestream Database | timestream:UpdateDatabase | Grants permission to update a database in your account | Write | Yes |
 | Timestream | Timestream Table Magnetic Store (S3) | timestream:UpdateTable | Grants permission to update a table in your account | Write | No |
 | Simple Notification Service (SNS) | SNS Topic | sns:SetTopicAttributes | Grants permission to allow a topic owner to set an attribute of the topic to a new value | Permissions Management | No |
+| CloudWatch | CloudWatch Log Group | logs:AssociateKMSKey | Grants permission to associate the specified AWS Key Management Service (AWS KMS) customer master key (CMK) with the specified log group | Write | Yes |
 
+| Prometheus | 
 
 
 Interesting Notes:
@@ -65,6 +68,10 @@ Interesting Notes:
 | Lightsail | Lightsail Managed DB |
 | Location Service | Location Trackers |
 | Location Service | Location Geofence Collection | 
+| Prometheus | Workspace | 
+
+
+
 
 ## Unencrypted Resources
 

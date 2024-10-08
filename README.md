@@ -40,9 +40,7 @@ Unauthorized use of these actions can lead to:
 | Timestream | Timestream Table Magnetic Store (S3) | timestream:UpdateTable | Grants permission to update a table in your account | Write | No |
 | Simple Notification Service (SNS) | SNS Topic | sns:SetTopicAttributes | Grants permission to allow a topic owner to set an attribute of the topic to a new value | Permissions Management | No |
 | CloudWatch | CloudWatch Log Group | logs:AssociateKMSKey | Grants permission to associate the specified AWS Key Management Service (AWS KMS) customer master key (CMK) with the specified log group | Write | Yes |
-
-| Prometheus | 
-
+| Kinesis | Firehose Stream | firehose:StartDeliveryStreamEncryption | Grants permission to enable server-side encryption (SSE) for the delivery stream | Write | Yes |
 
 Interesting Notes:
 * Timestream Update Database only updates encryption settings: https://docs.aws.amazon.com/timestream/latest/developerguide/API_UpdateDatabase.html
@@ -69,6 +67,9 @@ Interesting Notes:
 | Location Service | Location Trackers |
 | Location Service | Location Geofence Collection | 
 | Prometheus | Workspace | 
+| Managed Streaming for Apache Kafka | MSK Cluster |
+| Sagemaker | Sagemaker Notebook Instance |
+
 
 
 

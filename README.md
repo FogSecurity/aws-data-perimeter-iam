@@ -58,8 +58,8 @@ Interesting Notes:
 | S3 (Simple Storage Service) | S3 Bucket |
 | RDS | RDS Database Instance |
 | EFS | EFS File System | 
-| ElastiCache | Global Datastore (Cluster) |
 | Aurora | Aurora Database Instance |
+| ElastiCache | Global Datastore (Cluster) |
 | ElastiCache | Redis Cache |
 | ElastiCache | Memcached Cache | 
 | ElastiCache | Serverless Cache |

@@ -101,7 +101,7 @@ Interesting Notes:
 | AWS Service | AWS Resource |
 | ------------- | ----------- |
 | SSM Parameter Store | String Parameter |
-| SSM Parameter STore | StringList Parameter |
+| SSM Parameter Store | StringList Parameter |
 
 * S3 is included in AWS Resources that cannot have encryption updated directly as changing bucket level encryption does not change the encryption settings for existing objects in the S3 bucket.
 

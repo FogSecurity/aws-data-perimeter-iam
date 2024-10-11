@@ -114,6 +114,6 @@ Interesting Notes:
 
 ## Reference Policies
 
-This folder contains helpful AWS IAM Policies for AWS Encryption Management
+In progress: This folder contains helpful AWS IAM Policies for AWS Encryption Management
 
 

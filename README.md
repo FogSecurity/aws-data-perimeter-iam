@@ -111,9 +111,3 @@ Interesting Notes:
 | S3 (Simple Storage Service) | S3 Bucket | s3:PutEncryptionConfiguration | Grants permission to set the encryption configuration for an Amazon S3 bucket | Write |
 | OpenSearch Serverless | OpenSearch Collection | aoss:CreateSecurityPolicy | Grants permission to create a network or encryption policy | Write |
 | OpenSearch Serverless | OpenSearch Collection | aoss:UpdateSecurityPolicy | Grants permission to update a security policy | Write |
-
-## Reference Policies
-
-In progress: This folder contains helpful AWS IAM Policies for AWS Encryption Management
-
-

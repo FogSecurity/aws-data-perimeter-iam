@@ -1,7 +1,7 @@
 # IAM References for AWS KMS Encryption
 
 Fog Security: https://www.fogsecurity.io/
-Accompanying Blog Post: TBD
+Accompanying Blog Post: https://www.fogsecurity.io/blog/updating-encryption-in-aws-ransonware
 
 Contact info@fogsecurity.io for help and feedback. Additions or feedback can be submitted here as well.
 

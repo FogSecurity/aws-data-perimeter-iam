@@ -7,6 +7,12 @@ Contact info@fogsecurity.io for help and feedback. Additions or feedback can be 
 
 ## Overview
 
+With ransomware on the rise, we look at one of the crucial attack vectors of ransomware: re-encrypting or encrypting cloud data resources.  Access in AWS cloud is governed by AWS Identity and Access Management and re-encrypting cloud data resources requires specific cloud permissions.  In order for an attacker to perform ransomware where data is re-encrypted with a encryption key that the attacker controls, these IAM permissions to update encryption or delete data resources are required.
+
+We found the following across 65 resources pver 45 AWS services:
+* 24 resources across 18 services had support for updating encryption via IAM methods.
+* 41 resources across 27 services could not have encryption updated and would require recreation.
+
 ## AWS Service Encryption IAM Actions 
 
 This section covers service-specific actions to set and update encryption options on AWS resources.  For example, setting S3 encryption for a bucket or updating a DynamoDB's encryption setting. 
@@ -16,6 +22,14 @@ Unauthorized use of these actions can lead to:
 * Data access issues
 * Application availability issues
 * Misconfiguration of data
+
+There are authorized use of these actions with some reasons below:
+* Update to security guardrails that require changes to different encryption keys.
+* Switching encryption from types of encryption keys such as to CMKs from AWS Owned or AWS Managed.
+* Standard maintenance or update of application and data encryption.
+* Data ownership team change.
+
+See [blog post](https://www.fogsecurity.io/blog/updating-encryption-in-aws-ransonware) for more insights from our research.
 
 ### AWS Service Encryption IAM Actions Table (Update Resources)
 

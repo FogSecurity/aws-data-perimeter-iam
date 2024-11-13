@@ -1,0 +1,27 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "DenyBypassPolicy",
+			"Effect": "Deny",
+			"Action": [
+				"kms:CreateKey",
+				"kms:PutKeyPolicy"
+			],
+			"Resource": "*",
+			"Condition": {
+				"Bool": {
+					"kms:BypassPolicyLockoutSafetyCheck": true
+				}
+			}
+		},
+    {
+      "Sid": "DenyScheduledDeletion",
+			"Effect": "Deny",
+			"Action": [
+				"kms:ScheduleKeyDeletion"
+			],
+			"Resource": "*"
+    }
+	]
+}

@@ -8,11 +8,11 @@
 				"kms:CreateKey"
 			],
 			"Resource": "*",
-      "Condition": {
-        "StringNotEquals": {
-          "kms:KeyOrigin": "AWS_KMS"
-        }
-      }
+      			"Condition": {
+				"StringNotEquals": {
+        				"kms:KeyOrigin": "AWS_KMS"
+				}
+			}
 		}
 	]
 }

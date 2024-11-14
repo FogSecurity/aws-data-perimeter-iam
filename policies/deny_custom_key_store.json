@@ -1,0 +1,17 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "DenyKMSCustomKeyStore",
+			"Effect": "Deny",
+			"Action": [
+				"kms:DeleteCustomKeyStore",
+				"kms:UpdateCustomKeyStore",
+				"kms:DisconnectCustomKeyStore",
+				"kms:ConnectCustomKeyStore",
+				"kms:CreateCustomKeyStore"
+			],
+			"Resource": "*"
+		}
+	]
+}

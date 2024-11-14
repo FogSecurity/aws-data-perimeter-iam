@@ -1,0 +1,18 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "DenyNonAWSKMSKeyOrigins",
+			"Effect": "Deny",
+			"Action": [
+				"kms:CreateKey"
+			],
+			"Resource": "*",
+      			"Condition": {
+				"StringNotEquals": {
+        				"kms:KeyOrigin": "AWS_KMS"
+				}
+			}
+		}
+	]
+}

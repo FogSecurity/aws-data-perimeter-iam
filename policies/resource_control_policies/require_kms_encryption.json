@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "EnforceKMSEncryption",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": [
+            	  "s3:PutObject",
+                "s3:ReplicateObject"
+                ],
+            "Resource": "*",
+            "Condition": {
+                "Null": {
+                    "s3:x-amz-server-side-encryption-aws-kms-key-id": "true"
+                }
+            }
+        }
+    ]
+}

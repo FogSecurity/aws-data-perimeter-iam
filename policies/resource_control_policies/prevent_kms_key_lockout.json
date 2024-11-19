@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "EnforceKMSEncryption",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": [
+                "kms:PutKeyPolicy",
+                "kms:CreateKey"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "Bool": {
+                	"kms:BypassPolicyLockoutSafetyCheck": true
+                }
+            }
+        }
+    ]
+}

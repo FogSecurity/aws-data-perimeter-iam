@@ -1,6 +1,6 @@
 # IAM References for AWS KMS Encryption: Updating Encryption on AWS Data Resources
 
-Fog Security: https://www.fogsecurity.io/ \
+Fog Security: https://www.fogsecurity.io/ 
 
 Contact info@fogsecurity.io for help and feedback. Additions or feedback can be submitted here as well.
 

@@ -7,7 +7,7 @@
             "Principal": "*",
             "Action": [
             	"kms:PutKeyPolicy",
-              "kms:CreateKey"
+                  "kms:CreateKey"
             ],
             "Resource": "*",
             "Condition": {

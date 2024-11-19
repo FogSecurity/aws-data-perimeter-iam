@@ -6,8 +6,8 @@
             "Effect": "Deny",
             "Principal": "*",
             "Action": [
-            	"kms:PutKeyPolicy",
-                  "kms:CreateKey"
+                "kms:PutKeyPolicy",
+                "kms:CreateKey"
             ],
             "Resource": "*",
             "Condition": {

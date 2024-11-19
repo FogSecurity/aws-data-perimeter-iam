@@ -8,7 +8,9 @@ Contact info@fogsecurity.io for help and feedback. Additions or feedback can be 
 
 ## Policies
 
-### encryption_read_perimeter.json
+### Encryption Perimeter (Data Read)
+
+* File: [encryption_read_perimeter.json](encryption_read_perimeter.json)
 
 ### prevent_kms_key_lockout.json
 

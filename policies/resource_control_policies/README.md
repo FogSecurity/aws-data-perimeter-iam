@@ -1,6 +1,6 @@
 # Resource Control Policies
 
-Fog Security: https://www.fogsecurity.io/ \
+Fog Security: https://www.fogsecurity.io/ 
 
 Accompanying Blog Post: https://www.fogsecurity.io/blog/data-perimeters-with-resource-control-policies-and-aws-kms
 

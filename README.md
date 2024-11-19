@@ -15,4 +15,4 @@ This folder contains references for managing IAM Policies.
 
 This folder contains AWS IAM references and research.
 
-* [AWS Service Encryption IAM Actions](iam_reference/encryption_update)
+* [AWS Service Encryption IAM Actions](iam_reference/encryption_update.md)

@@ -9,7 +9,12 @@ Contact info@fogsecurity.io for help and feedback. Additions or feedback can be 
 This folder contains references for managing IAM Policies.  
 
 * [Resource Control Policies](policies/resource_control_policies)
+
+  
+  
 * [Service Control Policies](policies/service_control_policies)
+
+  **Work in Progress**
 
 ## IAM Reference
 

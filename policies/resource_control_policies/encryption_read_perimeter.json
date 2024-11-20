@@ -30,6 +30,9 @@
                 "StringNotEqualsIfExists": {
                     "aws:SourceOrgID": "ORG_ID_HERE"
                 },
+                "Null": {
+                    "aws:SourceAccount": "false"
+                },
                 "Bool": {
                     "aws:PrincipalIsAWSService": "true"
                 }

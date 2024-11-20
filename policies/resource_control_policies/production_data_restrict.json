@@ -36,6 +36,9 @@
                         "<ProductionOrgPath2>"
                     ]
                 },
+                "Null": {
+                    "aws:SourceAccount": "false"
+                },
                 "Bool": {
                     "aws:PrincipalIsAWSService": "true"
                 }

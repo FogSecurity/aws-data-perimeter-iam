@@ -1,6 +1,6 @@
 # S3 and KMS Ransomware Protection
 
-This page provides reference controls to help prevent against ransomware and to create an effective data perimeter with cloud-native controls such as encryption with KMS and IAM policies. 
+This page provides reference controls to help prevent against ransomware and to create an effective data perimeter with cloud-native controls such as encryption with KMS and IAM policies. 11 different ransomware protection cases are covered below.  Please see accompanying blog post for more detailed explanations of each control.
 
 The controls will help prevent: 
 
@@ -30,6 +30,8 @@ Accompanying Blog Post: [https://www.fogsecurity.io/blog/the-complete-guide-to-r
 ### Prevent Deletion of Data in S3
 
 ### Require AWS KMS Encryption (non SSE-C and non-S3 Managed)
+
+### Prevent Modification of Account Settings
 
 ### Prevent Modification of Bucket and Object Settings
 

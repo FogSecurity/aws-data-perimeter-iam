@@ -1,6 +1,6 @@
 # S3 and KMS Ransomware Protection
 
-This page provides reference controls to help prevent against ransomware and to create an effective data perimeter with cloud-native controls such as encryption with KMS and IAM policies. 11 different ransomware protection cases are covered below.  Please see accompanying blog post for more detailed explanations of each control.
+This page provides reference controls to help prevent against ransomware in AWS and to create an effective data perimeter with cloud-native controls such as encryption with KMS and IAM policies. 11 different ransomware protection cases are covered below.  Please see accompanying blog post for more detailed explanations of each control.
 
 The controls will help prevent: 
 
@@ -22,6 +22,11 @@ Accompanying Blog Post: [https://www.fogsecurity.io/blog/the-complete-guide-to-r
 ## Ransomware Prevention Use Cases
 
 ### Prevent Customer-Provided Encryption (SSE-C)
+
+| File Name | Control Type | Description | Permissions Needed |
+|-----------|--------------|--------------|-------------------|
+| [prevent_s3_sse_c_encryption.json](policies/resource_control_policies)/prevent_s3_sse_c_encryption.json| RCP | RCP to block S3 SSE-C Encrpytion | organizations:CreatePolicy and organizations:AttachPolicy |
+| 
 
 ### Prevent Public Access to S3 Data (General)
 

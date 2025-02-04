@@ -25,7 +25,7 @@ Accompanying Blog Post: [https://www.fogsecurity.io/blog/the-complete-guide-to-r
 
 | File Name | Control Type | Description | Permissions Needed |
 |-----------|--------------|--------------|-------------------|
-| [prevent_s3_sse_c_encryption.json](policies/resource_control_policies)/prevent_s3_sse_c_encryption.json| RCP | RCP to block S3 SSE-C Encrpytion | organizations:CreatePolicy and organizations:AttachPolicy |
+| [prevent_s3_sse_c_encryption.json](policies/resource_control_policies/prevent_s3_sse_c_encryption.json)| RCP | RCP to block S3 SSE-C Encrpytion | organizations:CreatePolicy and organizations:AttachPolicy |
 | 
 
 ### Prevent Public Access to S3 Data (General)

@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "DenySSEC",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::<your_bucket_here>/*",
+            "Condition": {
+                "Null": {
+                    "s3:x-amz-server-side-encryption-customer-algorithm": "false"
+                }
+            }
+        }
+    ]
+}

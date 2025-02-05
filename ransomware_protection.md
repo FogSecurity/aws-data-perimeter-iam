@@ -113,3 +113,7 @@ aws s3api put-object-lock-configuration \
 | [prevent_non_kms_key_creation.json](policies/service_control_policies/prevent_non_kms_key_creation.json)| SCP | SCP to prevent key creation without kms key material | organizations:CreatePolicy and organizations:AttachPolicy |
 
 ### KMS: Prevent Key Usage with non AWS_KMS Key Material
+
+| File Name | Control Type | Description | Permissions Needed |
+|-----------|--------------|--------------|-------------------|
+| [prevent_key_usage_without_kms_material.json](policies/resource_control_policies/prevent_key_usage_without_kms_material.json)| RCP | RCP to prevent KMS Key Usage with non AWS_KMS Key Material | organizations:CreatePolicy and organizations:AttachPolicy |

@@ -43,6 +43,16 @@ aws s3control put-public-access-block \
 
 ### Prevent Public Access to S3 (ACLs)
 
+| File Name | Control Type | Description | Permissions Needed |
+|-----------|--------------|--------------|-------------------|
+| See below code snippet | Bucket Setting | Set Bucket Ownership Settings (and ACL settings) | s3:GetBucketOwnershipControls and s3:PutBucketOwnershipControls |
+
+```
+aws s3api put-bucket-ownership-controls \
+--bucket <your_bucket_here> \
+--ownership-controls="Rules=[{ObjectOwnership=BucketOwnerEnforced}]"
+```
+
 ### Prevent Deletion of Data in S3
 
 ### Require AWS KMS Encryption (non SSE-C and non-S3 Managed)

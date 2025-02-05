@@ -96,6 +96,10 @@ aws s3api put-object-lock-configuration \
 
 ### KMS: Prevent External Access (Outside Organization) to KMS
 
+| File Name | Control Type | Description | Permissions Needed |
+|-----------|--------------|--------------|-------------------|
+| [encryption_read_perimeter.json](policies/resource_control_policies/encryption_read_perimeter.json)| RCP | RCP to prevent KMS decryption access from outside AWS organization | organizations:CreatePolicy and organizations:AttachPolicy |
+
 ### KMS: Prevent External Key Store (XKS)
 
 ### KMS: Prevent Key Creation with non AWS_KMS Key Material

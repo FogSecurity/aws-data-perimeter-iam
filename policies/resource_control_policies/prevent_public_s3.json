@@ -1,0 +1,42 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "BlockPublicAccessToS3",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "StringNotEqualsIfExists": {
+                    "aws:PrincipalOrgID": "ORG_ID_HERE"
+                },
+                "BoolIfExists": {
+                    "aws:PrincipalIsAWSService": "false"
+                }
+            }
+        },
+        {
+            "Sid": "EnforceConfusedDeputyProtection",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "StringNotEqualsIfExists": {
+                    "aws:SourceOrgID": "ORG_ID_HERE"
+                },
+                "Null": {
+          			"aws:SourceAccount": "false"
+        		},
+                "Bool": {
+                    "aws:PrincipalIsAWSService": "true"
+                }
+            }
+      }
+    ]
+}

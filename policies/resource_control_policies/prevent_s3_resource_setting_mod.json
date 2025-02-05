@@ -1,0 +1,27 @@
+{    
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyS3SettingsWithException",
+      "Effect": "Deny",
+      "Action": [
+		"s3:PutBucketAcl",
+		"s3:PutBucketOwnershipControls",
+		"s3:PutBucketPolicy",
+		"s3:PutBucketPublicAccessBlock",
+		"s3:PutBucketObjectLockConfiguration",
+		"s3:PutBucketVersioning",
+		"s3:PutObjectAcl",
+		"s3:PutObjectVersionAcl",
+		"s3:PutObjectLegalHold",
+		"s3:PutObjectRetention"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "ArnNotLikeIfExists": {
+          "aws:PrincipalARN":"arn:aws:iam::*:role/<your_admin_role>"
+        }
+      }
+    }
+  ]
+}

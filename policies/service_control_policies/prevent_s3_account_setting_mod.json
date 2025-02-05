@@ -1,0 +1,18 @@
+{    
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyS3AccountSettingWithException",
+      "Effect": "Deny",
+      "Action": [
+        "s3:PutAccountPublicAccessBlock"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "ArnNotLike": {
+          "aws:PrincipalARN":"arn:aws:iam::*:role/<your_admin_role>"
+        }
+      }
+    }
+  ]
+}

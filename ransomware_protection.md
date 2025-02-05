@@ -77,6 +77,11 @@ aws s3api put-object-lock-configuration \
 
 ### Require AWS KMS Encryption (non SSE-C and non-S3 Managed)
 
+| File Name | Control Type | Description | Permissions Needed |
+|-----------|--------------|--------------|-------------------|
+| [prevent_non_kms_encryption.json](policies/resource_control_policies/prevent_non_kms_encryption.json)| RCP | RCP to prevent non AWS KMS Encryption | organizations:CreatePolicy and organizations:AttachPolicy |
+| [prevent_non_kms_encryption.json](policies/bucket_policies/prevent_non_kms_encryption.json) | Bucket Policy | Bucket Policy to prevent non AWS KMS Encryption | s3:PutBucketPolicy |
+
 ### Prevent Modification of Account Settings
 
 ### Prevent Modification of Bucket and Object Settings

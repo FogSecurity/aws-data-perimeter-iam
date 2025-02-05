@@ -84,7 +84,15 @@ aws s3api put-object-lock-configuration \
 
 ### Prevent Modification of Account Settings
 
+| File Name | Control Type | Description | Permissions Needed |
+|-----------|--------------|--------------|-------------------|
+| [prevent_s3_account_setting_mod.json](policies/service_control_policies/prevent_s3_account_setting_mod.json)| SCP | SCP to prevent modification of s3 account settings | organizations:CreatePolicy and organizations:AttachPolicy |
+
 ### Prevent Modification of Bucket and Object Settings
+
+| File Name | Control Type | Description | Permissions Needed |
+|-----------|--------------|--------------|-------------------|
+| [prevent_s3_resource_setting_mod.json](policies/resource_control_policies/prevent_s3_resource_setting_mod.json)| RCP | RCP to prevent modification of s3 bucket and object settings | organizations:CreatePolicy and organizations:AttachPolicy |
 
 ### KMS: Prevent External Access (Outside Organization) to KMS
 

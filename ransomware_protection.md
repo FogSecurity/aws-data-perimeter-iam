@@ -102,6 +102,10 @@ aws s3api put-object-lock-configuration \
 
 ### KMS: Prevent External Key Store (XKS)
 
+| File Name | Control Type | Description | Permissions Needed |
+|-----------|--------------|--------------|-------------------|
+| [prevent_xks.json](policies/service_control_policies/prevent_xks.json)| SCP | SCP to prevent KMS external key store administration | organizations:CreatePolicy and organizations:AttachPolicy |
+
 ### KMS: Prevent Key Creation with non AWS_KMS Key Material
 
 ### KMS: Prevent Key Usage with non AWS_KMS Key Material

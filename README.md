@@ -6,7 +6,7 @@ Contact info@fogsecurity.io for help and feedback. Additions or feedback can be 
 
 ## Ransomware Prevention
 
-This folder contains references for preventing ransomware.  These controls will focus on ransomware targeting Amazon S3 and KMS.
+Within this repository, we have created references to help prevent ransomware.  These controls will focus on ransomware targeting Amazon S3 and KMS.
 
 See [ransomware protection in this repository](ransomware_protection.md) for more information and [our accompanying blog here.](https://www.fogsecurity.io/blog/the-complete-guide-to-ransomware-protection-in-s3-and-kms)
 

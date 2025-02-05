@@ -38,6 +38,6 @@ This RCP provides 2 layers of security for secrets in Secrets Manager:
 * Denies access to create public resource policies on a Secret via the `secretsmanager:BlockPublicPolicy` condition key.
 
 #### Require KMS Encryption for any object uploaded to S3
-File: [require_kms_encryption.json](require_kms_encryption.json)
+File: [prevent_non_kms_encryption.json](prevent_non_kms_encryption.json)
 
-This RCP requires any upload via `s3:PutObject` or `s3:ReplicateObject` to require KMS encryption.  
+This RCP requires any upload via `s3:PutObject` to require KMS encryption.  

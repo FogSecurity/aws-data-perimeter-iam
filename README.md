@@ -8,7 +8,7 @@ Contact info@fogsecurity.io for help and feedback. Additions or feedback can be 
 
 This folder contains references for preventing ransomware.  These controls will focus on ransomware targeting Amazon S3 and KMS.
 
-See [Ransomware Protection](ransomware_protection.md) for more information and [accompanying blog](https://www.fogsecurity.io/blog/the-complete-guide-to-ransomware-protection-in-s3-and-kms)
+See [ransomware protection in this repository](ransomware_protection.md) for more information and [our accompanying blog here.](https://www.fogsecurity.io/blog/the-complete-guide-to-ransomware-protection-in-s3-and-kms)
 
 Resources:
 
@@ -16,10 +16,6 @@ Resources:
 * Resource-Based Policies such as Bucket Policies
 * Service Control Policies
 * S3 Bucket and Account Settings
-
-
-
-Note: There may be duplicate policies with the [policies](policies) folder.  We are moving to more purpose-driven organization and will consolidate policies soon.
 
 ## Policies
 

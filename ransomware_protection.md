@@ -25,10 +25,15 @@ Accompanying Blog Post: [https://www.fogsecurity.io/blog/the-complete-guide-to-r
 
 | File Name | Control Type | Description | Permissions Needed |
 |-----------|--------------|--------------|-------------------|
-| [prevent_s3_sse_c_encryption.json](policies/resource_control_policies/prevent_s3_sse_c_encryption.json)| RCP | RCP to block S3 SSE-C Encrpytion | organizations:CreatePolicy and organizations:AttachPolicy |
+| [prevent_s3_sse_c_encryption.json](policies/resource_control_policies/prevent_s3_sse_c_encryption.json)| RCP | RCP to block S3 SSE-C Encryption | organizations:CreatePolicy and organizations:AttachPolicy |
 | [prevent_s3_sse_c_encryption.json](policies/bucket_policies/prevent_s3_sse_c_encryption.json) | Bucket Policy | Bucket Policy to block S3 SSE-C Encryption | s3:PutBucketPolicy |
 
 ### Prevent Public Access to S3 Data (General)
+
+| File Name | Control Type | Description | Permissions Needed |
+|-----------|--------------|--------------|-------------------|
+| [prevent_public_s3.json](policies/resource_control_policies/prevent_public_s3.json)| RCP | RCP to block access to S3 from outside organization | organizations:CreatePolicy and organizations:AttachPolicy |
+| See below code snippet | Account Setting | Set Account Public Access Block | s3:GetAccountPublicAccessBlock and s3:PutAccountPublicAccessBlock | 
 
 ```
 aws s3control put-public-access-block \

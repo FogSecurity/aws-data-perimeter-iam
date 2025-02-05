@@ -55,6 +55,26 @@ aws s3api put-bucket-ownership-controls \
 
 ### Prevent Deletion of Data in S3
 
+| File Name | Control Type | Description | Permissions Needed |
+|-----------|--------------|--------------|-------------------|
+| [prevent_s3_data_delete.json](policies/bucket_policies/prevent_s3_data_delete.json)| Bucket Policy | Bucket Policy to  | s3:PutBucketPolicy |
+| See below code snippet (1) | Bucket Setting | Enable Bucket Versioning | s3:PutBucketVersioning | 
+| See below code snippet (2) | Bucket Setting | Set Object Lock Mode on Bucket | s3:PutBucketObjectLockConfiguration | 
+
+1.  Set Bucket Versioning
+```
+aws s3api put-bucket-versioning \
+--bucket <your_bucket_here> \
+--versioning-configuration Status=Enabled
+```
+
+2.  Set Object Lock
+```
+aws s3api put-object-lock-configuration \
+--bucket <your_bucket_here> \
+--object-lock-configuration='{ "ObjectLockEnabled": "Enabled", "Rule": { "DefaultRetention": { "Mode": "GOVERNANCE", "Days": 30 }}}'
+```
+
 ### Require AWS KMS Encryption (non SSE-C and non-S3 Managed)
 
 ### Prevent Modification of Account Settings

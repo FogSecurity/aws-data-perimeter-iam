@@ -1,0 +1,19 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "DenySSEC",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": [
+            	"s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:::<your_bucket_name>/*",
+            "Condition": {
+        		"Null": {
+          			"s3:x-amz-server-side-encryption-aws-kms-key-id": "true"
+        		}
+      		}
+        }
+    ]
+}

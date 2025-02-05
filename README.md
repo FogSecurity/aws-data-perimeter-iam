@@ -1,8 +1,23 @@
-# IAM References for Data Perimeters and Data Security
+# IAM References for Data Perimeters, Ransomware, and Data Security
 
 Fog Security: https://www.fogsecurity.io/ 
 
 Contact info@fogsecurity.io for help and feedback. Additions or feedback can be submitted here as well.
+
+## Ransomware Prevention
+
+This folder contains references for preventing ransomware.  These policies will focus on ransomware targeting Amazon S3.
+
+Resources:
+
+* Resource Control Policies
+* Resource-Based Policies such as Bucket Policies
+
+* [Use Cases here]
+
+
+
+Note: There may be duplicate policies with the [policies](policies) folder.  We are moving to more purpose-driven organization and will consolidate policies soon.
 
 ## Policies
 

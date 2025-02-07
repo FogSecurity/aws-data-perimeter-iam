@@ -1,0 +1,30 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "S3FullTagging",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetJobTagging",
+                "s3:GetBucketTagging",
+                "s3:GetObjectTagging",
+                "s3:GetObjectVersionTagging",
+                "s3:GetStorageLensConfigurationTagging",
+                "s3:ListTagsForResource",
+                "s3:PutBucketTagging",
+                "s3:PutObjectTagging",
+                "s3:PutStorageLensConfigurationTagging",
+                "s3:PutObjectVersionTagging",
+                "s3:PutJobTagging",
+                "s3:TagResource",
+                "s3:DeleteStorageLensConfigurationTagging",
+                "s3:DeleteObjectTagging",
+                "s3:DeleteObjectVersionTagging",
+                "s3:UntagResource",
+                "s3:ReplicateTags",
+                "s3:DeleteJobTagging"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
